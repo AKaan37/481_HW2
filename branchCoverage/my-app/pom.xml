@@ -17,18 +17,19 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>4.12</version> <!-- Consider upgrading to a newer version if it aligns with your project requirements -->
+  <scope>test</scope>
+</dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
-    <dependency>
-      <groupId>org.mockito</groupId>
-	  <artifactId>mockito-all</artifactId>
-      <version>1.9.5</version>
-    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+<dependency>
+<groupId>org.mockito</groupId>
+<artifactId>mockito-core</artifactId>
+<version>4.11.0</version>
+<scope>test</scope>
+</dependency>
 
   </dependencies>
 
@@ -37,7 +38,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.7.6.201602180812</version>
+        <version>0.8.11</version>
         <configuration>
             <excludes>
               <exclude>com/mycompany/app/**/*</exclude>
@@ -53,5 +54,5 @@
         </executions>
       </plugin>
     </plugins>
-  </build
-></project>
+  </build>
+  </project>
